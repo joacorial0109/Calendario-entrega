@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>CalendarioFIT</title>
+</head>
+<body>
+  <h1>CalendarioFIT</h1>
+
+  <label>Mes:</label>
+  <select id="mes"></select>
+
+  <label>Año:</label>
+  <select id="anio"></select>
+
+  <button id="btnAgregar">Agregar gasto</button>
+
+  <h2>Total del mes: $<span id="total">0</span></h2>
+
+  <table border="1" cellpadding="6">
+    <thead>
+      <tr>
+        <th>Fecha</th>
+        <th>Categoría</th>
+        <th>Monto</th>
+        <th>Descripción</th>
+      </tr>
+    </thead>
+    <tbody id="tablaGastos"></tbody>
+  </table>
+
+  <script src="renderer.js"></script>
+</body>
+</html>

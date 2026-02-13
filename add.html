@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Agregar gasto</title>
+</head>
+<body>
+  <h1>Agregar gasto</h1>
+
+  <form id="formGasto">
+    <div>
+      <label>Monto:</label><br />
+      <input type="number" id="monto" required step="0.01" />
+    </div>
+    <br />
+
+    <div>
+      <label>Categoría:</label><br />
+      <input type="text" id="categoria" required />
+    </div>
+    <br />
+
+    <div>
+      <label>Fecha:</label><br />
+      <input type="date" id="fecha" required />
+    </div>
+    <br />
+
+    <div>
+      <label>Descripción (opcional):</label><br />
+      <input type="text" id="descripcion" />
+    </div>
+    <br />
+
+    <button type="submit">Guardar</button>
+    <button type="button" id="btnVolver">Volver</button>
+  </form>
+
+  <script src="add.js"></script>
+</body>
+</html>
